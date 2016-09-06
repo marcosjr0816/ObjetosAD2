@@ -37,11 +37,11 @@ public class Principal extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         txtDenominador2 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtNumerador3 = new javax.swing.JTextField();
-        jSeparator3 = new javax.swing.JSeparator();
-        txtDenominador3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        cmdCalcular = new javax.swing.JButton();
+        cmdBorrar = new javax.swing.JButton();
+        txtNumerador4 = new javax.swing.JTextField();
+        jSeparator4 = new javax.swing.JSeparator();
+        txtDenominador4 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,7 +50,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel1.setText("OPERACIONES CON FRACIONARIOS");
+        jLabel1.setText("OPERACIONES CON FRACCIONARIOS");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, 20));
 
         cmdOperacion.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Suma", "Resta", "Multiplicacion", "Division" }));
@@ -62,17 +62,18 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel2.setText("=");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
-        getContentPane().add(txtNumerador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 60, 20));
-        getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 60, 10));
-        getContentPane().add(txtDenominador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 60, 20));
 
-        jButton1.setText("Calcular");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
+        cmdCalcular.setText("Calcular");
+        getContentPane().add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
-        jButton2.setText("Borrar");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        cmdBorrar.setText("Borrar");
+        getContentPane().add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        getContentPane().add(txtNumerador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 60, -1));
+        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, 60, 10));
+        getContentPane().add(txtDenominador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 60, -1));
 
-        pack();
+        setSize(new java.awt.Dimension(455, 273));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -111,19 +112,19 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdBorrar;
+    private javax.swing.JButton cmdCalcular;
     private javax.swing.JComboBox cmdOperacion;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTextField txtDenominador1;
     private javax.swing.JTextField txtDenominador2;
-    private javax.swing.JTextField txtDenominador3;
+    private javax.swing.JTextField txtDenominador4;
     private javax.swing.JTextField txtNumerador1;
     private javax.swing.JTextField txtNumerador2;
-    private javax.swing.JTextField txtNumerador3;
+    private javax.swing.JTextField txtNumerador4;
     // End of variables declaration//GEN-END:variables
 }
